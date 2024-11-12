@@ -1,1 +1,1 @@
-print("Hola mundo")
+kajnjsnoinono("Hola mundo")

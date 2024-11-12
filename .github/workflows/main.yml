@@ -3,9 +3,17 @@ name: Primer workflow
 on: push
 
 jobs:
-  hola_mundo:
-    runs-on: ubuntu-latest
 
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Bajar codigo
+        uses: actions/checkout@v4
+      - name: Probar codigo
+        run: python3 main.py
+        
+  build_push:
+    runs-on: ubuntu-latest
     steps:
       - name: Bajar codigo
         uses: actions/checkout@v4
